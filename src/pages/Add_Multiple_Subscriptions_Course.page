@@ -1,0 +1,15 @@
+<apex:page standardcontroller="Inscripcion__c" recordSetVar="inscriptos"
+           extensions="Add_Multiple_Subscriptions_Course">
+	<apex:form >
+	<apex:pageBlock title="Which attendants would you like to add?">
+        <apex:pageBlockTable value="{!contactsInternal}" var="c" id="table">
+            <apex:column ><apex:inputCheckbox value="{!c.selected}"/></apex:column>
+            <apex:column value="{!c.con.FirstName}"></apex:column>
+			<apex:column value="{!c.con.LastName}"></apex:column>
+        </apex:pageBlockTable>
+        <apex:pageBlockButtons >
+        	<apex:commandButton value="Enroll" action="{!processSelected}" rerender="table" />
+        </apex:pageBlockButtons>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>
