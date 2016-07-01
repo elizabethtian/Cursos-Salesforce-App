@@ -4,6 +4,8 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"/>
     <script src="//cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.min.js"/>
     <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.min.js"/>
+    <script src="{!$Resource.FullCalendarLang}" />
+    
     <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.min.css" rel="stylesheet" />
     <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.print.css" rel="stylesheet" media="print"  />
     <link href="//cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.min.css" rel="stylesheet" />
@@ -90,7 +92,7 @@
     <apex:outputPanel style="float: right; padding: 0.5em 1em 0 1em;">
         <apex:form >
             <apex:inputText value="{!filterCriteria}"/>
-            <apex:commandButton value="Filter"/>
+            <apex:commandButton value="Filtro"/>
         </apex:form>
     </apex:outputPanel>
 	<div id='calendar'></div>
