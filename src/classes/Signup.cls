@@ -37,14 +37,14 @@ public class Signup {
         	// mail
 			Messaging.reserveSingleEmailCapacity(1);
 			Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
-			mail.setSubject('Se ha suscrito a ' + cur[0].Name + ' con exito!');
+			mail.setSubject('¡Su solicitud de inscripción a ' + cur[0].Name + ' ha sido completada!');
 			String[] toAddresses = new List<String>();
 			String greeting = 'Hola!';
 			String importe;
-			if (cur[0].Importe__c != null) { importe = ' El importe total es ' + cur[0].Importe__c + ' ' + cur[0].Moneda_Importe__c + '.'; }
+			if (cur[0].Importe__c != null) { importe = ' El importe total del mismo es ' + cur[0].Importe__c + ' ' + cur[0].Moneda_Importe__c + '.'; }
 			else { importe = ''; }
-			String info = '<br><br>Gracias por inscribirte a curso de ' + cur[0].Name
-            					   + '!' + importe + ' Abajo hay informacion para el curso: '
+			String info = '<br><br>¡Muchas gracias por inscribirte al curso de ' + cur[0].Name
+            					   + '!' + importe + '<br><br> A continuación te detallamos toda la información del mismo:<br>'
             					   + '<br><ul><li>Nombre: '+ cur[0].Name 
             					   + '</li><li>Fecha de Inicio: ' + cur[0].Fecha_de_Inicio__c
             					   + '</li><li>Fecha de Finalizacion: ' + cur[0].Fecha_de_Finalizacion__c 
