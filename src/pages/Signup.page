@@ -34,14 +34,14 @@
             </apex:pageBlockButtons>
             <apex:pageBlockSection title="Asistente Nuevo" collapsible="false" columns="1" rendered="{!newContact}">
                 <apex:pageMessages ></apex:pageMessages>
-                <apex:outputText ><b>Nombre: *</b></apex:outputText>
-                <apex:inputText id="first" value="{!newContactFirstName}" required="{!newContact}"/>
-                <apex:outputText id="last"><b>Apellido: *</b></apex:outputText>
-                <apex:inputText value="{!newContactLastName}" required="{!newContact}"/>
+                <apex:inputField value="{!contact.FirstName}" required="{!newContact}"/>
+                <apex:inputField value="{!contact.LastName}" required="{!newContact}"/>
+                <apex:inputField value="{!contact.Email}" required="{!newContact}"/>
+                <apex:inputField value="{!contact.Phone}" required="{!newContact}"/>
             </apex:pageBlockSection>
             <apex:pageBlockSection title="Asistente Viejo" collapsible="false" columns="1" rendered="{!oldContact}">
                 <apex:pageMessages ></apex:pageMessages>
-                <apex:inputField value="{!newInscrip.Asistente__c}" required="{!oldContact}"/>
+                <apex:inputField value="{!contact.Email}" required="{!oldContact}"/>
             </apex:pageBlockSection>
             <apex:pageBlockSection title="Otra Informacion" collapsible="false" columns="1" rendered="{!OR(newContact,oldContact)}">
                 <apex:inputField value="{!newInscrip.Modo_de_in__c}"/>
