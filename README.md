@@ -1,7 +1,7 @@
 # Cursos-Salesforce-App
 
 * Salesforce package with Course, Registration, and Attendance Objects
-* Uses Apex, Visualforce, jQuery, CSS
+* Uses Apex, Visualforce, SOQL, jQuery, CSS
 * Automatically creates Attendance records when Contact is registered for a course
 * Buttons allow for multiple registrations
 * Calendar displays courses, when clicked directs to course page, on hover displays course information
