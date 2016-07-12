@@ -16,9 +16,9 @@ Tabs: Course object, Registration object, Attendance Object, Course Calendar
 
 <img src="https://raw.github.com/elizabethtian/Cursos-Salesforce-App/master/Tabs.png" width="35%" height="35%" />
 
-Course Calendar page: Allows for web integration; filter by course name; description on hover; Signup page on click
+Course Calendar page: Allows for web integration; filter by course name; description on hover; Signup page on click; different color for each course
 
-<img src="https://raw.github.com/elizabethtian/Cursos-Salesforce-App/master/Calendar_Demo.png" width="85%" height="85%" />
+<img src="https://raw.github.com/elizabethtian/Cursos-Salesforce-App/master/Calendar.png" width="85%" height="85%" />
 
 Signup page: Course info displayed; new registration to the course stored in Salesforce database; automatic confirmation email sent to attendant; if "Asistente Nuevo" is selected, a new Contact is created and linked to this registration if contact does not already exist; if "Asistente Viejo" is selected, the registration is linked to a previous contact in the Salesforce database found through an SOQL query using email match
 
