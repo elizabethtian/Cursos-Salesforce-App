@@ -9,9 +9,13 @@ public class Calendar_Website {
     
     @RemoteAction
     public static String pageLoad() {
+		String[] colors = new String[]{'#383838', '#2d5867', '#1e2e4d',
+             							'#000d11', '#2c003a',
+            							'#cb6464', '#d2b06e', '#7fd472', '#56b9bc', '#645ac1'
+            						  };
 
         List<CalEvent> events = new List<CalEvent>();
-        
+        Integer i = 0;
         for (Curso__c cur: [SELECT Name,
                            		   Fecha_de_Inicio__c,
                            		   Fecha_de_Finalizacion__c,
@@ -36,6 +40,7 @@ public class Calendar_Website {
             	CalEvent course = new CalEvent();
                 course.title = cur.Name;
                 course.allDay = true;
+                course.color = colors[i];
                 DateTime d = (DateTime) dat;
                 course.startString = d.formatGMT(dtFormat);
                 course.endString = null;
@@ -56,6 +61,11 @@ public class Calendar_Website {
                 if (cur.Comentarios__c != null) { course.comentarios = cur.Comentarios__c;} else {course.comentarios = 'None';}
                 events.add(course);
             }
+            if (i < colors.size() - 1) {
+                i++;
+            } else {
+                i = 0;
+            }                       
         }
         String jsonEvents = JSON.serialize(events);
         jsonEvents = jsonEvents.replace('startString','start');
@@ -65,6 +75,7 @@ public class Calendar_Website {
     
     public class CalEvent {
         public String title {get; set;}
+        public String color {get; set;}
         public Boolean allDay {get; set;}
         public String startString {get; set;}
         public String endString {get; set;}
