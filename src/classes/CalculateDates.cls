@@ -1,3 +1,13 @@
+/*
+ * Apex class used by AnadirAsistencia trigger to calculate the specific dates
+ * for Attendance records to be automatically created for a Registration record,
+ * based on the start date, end date, the day of the week, and the frequency of
+ * the course that the contact is registering for.
+ *
+ * Created by: Elizabeth Tian, 2016
+ *
+*/
+
 public class CalculateDates {
 	public static Date[] getDates(Date initial, Date finalDate, String dayWeek, String frequency) {
 		String[] days = dayWeek.split(';');

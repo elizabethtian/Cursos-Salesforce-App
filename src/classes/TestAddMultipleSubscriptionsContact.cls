@@ -1,3 +1,14 @@
+/*
+ * Apex test class for the corresponding Add Multiple Subscriptions controller extension
+ *
+ * SOQL query pulls up a list of all Courses in the database. This allows the organization
+ * to subscribe one Contact to multiple Courses that the organization selects
+ * and create the corresponding Registration and Attendance records.
+ *
+ * Created by: Elizabeth Tian, 2016
+ *
+*/
+
 @isTest
 public class TestAddMultipleSubscriptionsContact {
     @isTest static void testExtension() {

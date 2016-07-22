@@ -1,3 +1,18 @@
+/* 
+ * Apex test class that tests the Signup Apex controller extension
+ * 
+ * Signup controller extension for the Signup page allows for website integration through
+ * Force.com site hosting and an iframe. A user is directed to this page after clicking on
+ * a course on the Calendar_Website page. When a user signs up, a SOQL query is made to check
+ * if the attendant email already exists in the Salesforce database - if it does not, the
+ * page creates a new Contact and subscribes them to the course (with a new Inscripcion record
+ * and the automatically created Asistencia records). An automatic confirmation email is also
+ * sent to the user after subscribing.c
+ * 
+ * Created by: Elizabeth Tian, 2016
+ *
+ */
+
 @isTest
 public class TestSignup {
 

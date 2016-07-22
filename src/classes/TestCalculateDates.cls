@@ -1,3 +1,15 @@
+/*
+ * Apex test class for Calculate Dates 
+ *
+ * CalculateDates class is used by AnadirAsistencia trigger to calculate the specific dates
+ * for Attendance records to be automatically created for a Registration record,
+ * based on the start date, end date, the day of the week, and the frequency of
+ * the course that the contact is registering for.
+ *
+ * Created by: Elizabeth Tian, 2016
+ *
+*/
+
 @isTest
 public class TestCalculateDates {
     @isTest static void testGetDates() {

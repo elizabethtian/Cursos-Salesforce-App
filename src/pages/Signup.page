@@ -1,3 +1,17 @@
+<!--
+
+Visualforce page for Signup that allows for website integration through
+Force.com site hosting and an iframe. A user is directed to this page after clicking on
+a course on the Calendar_Website page. When a user signs up, a SOQL query is made to check
+if the attendant email already exists in the Salesforce database - if it does not, the
+page creates a new Contact and subscribes them to the course (with a new Inscripcion record
+and the automatically created Asistencia records). An automatic confirmation email is also
+sent to the user after subscribing.c
+
+Created by: Elizabeth Tian, 2016
+
+-->
+
 <apex:page standardController="Curso__c" extensions="Signup" sidebar="false" showHeader="false">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>

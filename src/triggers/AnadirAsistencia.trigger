@@ -1,3 +1,13 @@
+/*
+ * Apex trigger that automatically creates Attendance records when a Registration
+ * is created for a course, corresponding to the exact dates that the contact will attend.
+ * A course instructor can then select who has attended their course for a particular day.
+ * Uses the Calculate Dates Apex class.
+ *
+ * Created by: Elizabeth Tian, 2016
+ *
+*/
+
 trigger AnadirAsistencia on Inscripcion__c (after insert/*, after delete*/) {
     if (Trigger.isInsert) {
         //Inscripcion__c[] insNuevos = Trigger.new;

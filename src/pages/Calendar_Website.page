@@ -1,3 +1,14 @@
+<!--
+
+Visualforce page for the Cursos Calendar that allows for website integration through
+Force.com site hosting and an iframe.
+If a course is clicked on the calendar, page is redirected to the Signup page,
+allowing anyone to sign up for the course.
+
+Created by: Elizabeth Tian, 2016
+
+-->
+
 <apex:page controller="Calendar_Website" standardStylesheets="false" sidebar="false">
     
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"/>

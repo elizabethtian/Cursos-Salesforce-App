@@ -1,3 +1,16 @@
+/*
+ * Apex test class that tests the AnadirAsistencia trigger.
+ *
+ * AnadirAsistencia trigger automatically creates Attendance records when a Registration
+ * is created for a course, corresponding to the exact dates that the contact will attend.
+ * A course instructor can then select who has attended their course for a particular day.
+ * Uses the Calculate Dates Apex class.
+ *
+ * Created by: Elizabeth Tian, 2016
+ *
+*/
+
+
 @isTest
 public class TestAnadirAsistencia {
     

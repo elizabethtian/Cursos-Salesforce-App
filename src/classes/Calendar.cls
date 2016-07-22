@@ -1,3 +1,12 @@
+/*
+ * Apex controller for the Cursos Calendar, which displays the Calendar in a Salesforce tab.
+ * If a course is clicwked on the calendar, page is redirected to the Course record in Salesforce.
+ *
+ * Created by: Elizabeth Tian, 2016
+ *
+ */
+
+
 public class Calendar {
     public String eventsJSON {get; set;}
     public String filterCriteria {get; set;}

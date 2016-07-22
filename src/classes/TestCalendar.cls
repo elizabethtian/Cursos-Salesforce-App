@@ -1,3 +1,14 @@
+/*
+ * Apex test class for the Calendar Apex controller
+ * 
+ * Calendar controller for the Cursos Calendar displays the Calendar in a Salesforce tab.
+ * If a course is clicked on the calendar, page is redirected to the Course record in Salesforce.
+ *
+ * Created by: Elizabeth Tian, 2016
+ *
+ */
+
+
 @isTest
 public class TestCalendar {
 

@@ -1,3 +1,15 @@
+/*
+ * Apex test class for the Calendar_Website Apex controller
+ *
+ * Calendar_Website controller for the Cursos Calendar allows for website integration through
+ * Force.com site hosting and an iframe.
+ * If a course is clicked on the calendar, page is redirected to the Signup page,
+ * allowing anyone to sign up for the course.
+ *
+ * Created by: Elizabeth Tian, 2016
+ *
+ */
+
 @isTest
 public class TestCalendar_Website {
 

@@ -1,3 +1,14 @@
+/*
+ * Add Multiple Subscriptions Apex controller extension for corresponding Visualforce page
+ *
+ * SOQL query pulls up a list of all Contacts in the database. This allows the organization
+ * to select and subscribe multiple Contacts to one course, creating the corresponding
+ * Registration and Attendance records.
+ *
+ * Created by: Elizabeth Tian, 2016
+ *
+*/
+
 public class Add_Multiple_Subscriptions_Contact {
     public ApexPages.StandardSetController controller;
     public List<cCurso> coursesInternal;

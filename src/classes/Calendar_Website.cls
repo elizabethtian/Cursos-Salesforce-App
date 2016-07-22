@@ -1,3 +1,13 @@
+/*
+ * Apex controller for the Cursos Calendar that allows for website integration through
+ * Force.com site hosting and an iframe.
+ * If a course is clicked on the calendar, page is redirected to the Signup page,
+ * allowing anyone to sign up for the course.
+ *
+ * Created by: Elizabeth Tian, 2016
+ *
+ */
+
 public class Calendar_Website {
     public String eventsJSON {get; set;}
     public String filterCriteria {get; set;}

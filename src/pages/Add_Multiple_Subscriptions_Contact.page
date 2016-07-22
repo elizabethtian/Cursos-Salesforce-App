@@ -1,3 +1,15 @@
+<!--
+
+Visualforce page that a Salesforce organization is directed to when they click the 
+button "Add Multiple Subscriptions" on a Contact page.  SOQL query pulls up a list
+of all Courses in the database. This allows the organization
+to subscribe one Contact to multiple Courses and create the corresponding
+Registration and Attendance records.
+
+Created by: Elizabeth Tian, 2016
+
+-->
+
 <apex:page standardController="Inscripcion__c" recordSetVar="inscriptos"
            extensions="Add_Multiple_Subscriptions_Contact">
 	<apex:form >
